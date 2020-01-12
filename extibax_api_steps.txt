@@ -1,0 +1,12 @@
+1. php artisan make:migration create_products_table
+2. edit the migration file created and after executed
+3. Configurar los controllers:
+4. Crear controlador: php artisan make:controller ProductController --resource (Para crear ciertas funciones crud por default)
+5. Se creo una ruta "/products" en el archivo api.php, y el parametro pasado fue el nombre del controlador creado
+6. Se agregaros "echos" para probar el api con Postman
+7. Se hizo php artisan migration:rollback para modificar el migration file y agregar las columnas del tiempo a la tabla
+8. Despues de modificarla se ejecuto nuevamente php aritsan migrate
+9. Se ejecuto php artisan make:model Product para crear el modelo el cual no hay necesidad de editar, ya que esta conectado directamente
+con la tabla SQL
+10. Se empezo a configurar el metodo store del controlador para guardar un producto
+11. Se configuraron los metodos: index, store, show, update & destroy del controlador ProductController
